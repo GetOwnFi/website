@@ -96,13 +96,14 @@ them if you deploy under a different domain.
 
 ## Editing common things
 
-- **Contact** — there is currently **no contact email** on the site (email
-  forwarding isn't set up yet). All "contact" links point to the GitHub org
-  (<https://github.com/GetOwnFi>). When an address is ready, add `mailto:` links
-  in the footer and on the About / Privacy / Terms pages.
-- **Waitlist form** — the form in `index.html` posts to a Formspree placeholder.
-  Create a free form at [formspree.io](https://formspree.io), then replace
-  `YOUR_FORM_ID` in the `action` URL.
+- **Contact email** — the site uses `mailto:hello@getownfi.com` links (in the
+  footer, the early-access call-to-action, and the About / Privacy / Terms
+  pages). `mailto:` opens the visitor's own email client, so no mail server is
+  required. Search for `hello@getownfi.com` to change the address.
+- **Early access** — there is intentionally **no signup form** (the site has no
+  backend or mail server to send email from). The "Be first to try OwnFi"
+  section is a `mailto:` call-to-action instead. If you later add a hosted form
+  service (e.g. Formspree), you can swap the button for a form.
 - **Colors / branding** — all design tokens live at the top of
   `assets/css/styles.css` under `:root` (neutral slate palette + one teal accent).
 - **Social share image** — `assets/img/og.svg`. Some platforms prefer a raster
