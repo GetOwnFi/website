@@ -16,12 +16,17 @@
   --slate-800: #1e293b;
   --slate-900: #0f172a;
 
-  /* Accent (deep teal) */
-  --accent-50: #ecfdf5;
-  --accent-100: #d1fae5;
-  --accent-500: #0f766e;
-  --accent-600: #0d6a62;
-  --accent-700: #0b554f;
+  /* Brand accent (indigo) */
+  --accent-50: #eef1f8;
+  --accent-100: #d8def0;
+  --accent-500: #1f2a56;
+  --accent-600: #18213f;
+  --accent-700: #141a35;
+
+  /* Secondary accent (muted gold) — decorative use only */
+  --gold-100: #f3ead4;
+  --gold-400: #c6a55a;
+  --gold-600: #a9863f;
 
   /* Semantic tokens */
   --bg: #ffffff;
@@ -371,7 +376,7 @@ ol {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: var(--accent);
+  background: var(--gold-400);
   flex: none;
 }
 
@@ -555,7 +560,7 @@ ol {
 .risk-dots[data-level="1"] i:nth-child(-n + 1),
 .risk-dots[data-level="2"] i:nth-child(-n + 2),
 .risk-dots[data-level="3"] i:nth-child(-n + 3) {
-  background: var(--accent);
+  background: var(--gold-400);
 }
 
 /* ---------- Cards / grids ---------- */
@@ -710,7 +715,7 @@ ol {
 /* ---------- Disclaimer ---------- */
 .disclaimer {
   border: 1px solid var(--border);
-  border-left: 4px solid var(--accent);
+  border-left: 4px solid var(--gold-400);
   background: var(--bg-subtle);
   border-radius: var(--radius);
   padding: 1.5rem 1.75rem;
@@ -794,6 +799,15 @@ ol {
 
 .site-footer .brand {
   color: #fff;
+}
+
+/* Indigo mark needs a light tile to stay legible on the dark footer */
+.site-footer .brand__mark {
+  width: 34px;
+  height: 34px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 4px;
 }
 
 .footer__about {

@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="OwnFi">
-  <rect x="0" y="0" width="48" height="48" rx="12" fill="#0f766e"/>
-  <path d="M24 10l11 4.4v8.6c0 6.9-4.5 12.1-11 14-6.5-1.9-11-7.1-11-14v-8.6L24 10z"
-        fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linejoin="round"/>
-  <circle cx="24" cy="23" r="3.6" fill="#ffffff"/>
-  <path d="M24 26.2v6.4" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round"/>
-</svg>

@@ -28,16 +28,18 @@ separately and is **not live yet**.
 ├── about.html            # About
 ├── privacy.html          # Privacy Policy
 ├── terms.html            # Terms & Risk disclosure
-├── favicon.svg           # Site icon
+├── favicon.png           # Site icon
+├── apple-touch-icon.png  # iOS home-screen icon
 ├── robots.txt            # Crawl rules
 ├── sitemap.xml           # Sitemap
 ├── .nojekyll             # Tell GitHub Pages to skip Jekyll processing
 └── assets/
-    ├── css/styles.css    # Single stylesheet (design system)
-    ├── js/main.js        # Minimal JS (mobile menu + footer year)
+    ├── css/styles.css     # Single stylesheet (design system)
+    ├── js/main.js         # Minimal JS (mobile menu + footer year)
     └── img/
-        ├── logo.svg       # Brand mark
-        └── og.svg         # Open Graph / social share image
+        ├── logo-mark.png   # Brand mark (used in nav/footer)
+        ├── logo-lockup.png # Full horizontal lockup (mark + wordmark)
+        └── og.png          # Open Graph / social share image (1200×630)
 ```
 
 No build step, no dependencies, no bundler. Just static files.
@@ -105,10 +107,14 @@ them if you deploy under a different domain.
   section is a `mailto:` call-to-action instead. If you later add a hosted form
   service (e.g. Formspree), you can swap the button for a form.
 - **Colors / branding** — all design tokens live at the top of
-  `assets/css/styles.css` under `:root` (neutral slate palette + one teal accent).
-- **Social share image** — `assets/img/og.svg`. Some platforms prefer a raster
-  PNG/JPG at 1200×630; if needed, export the SVG to PNG and update the
-  `og:image` / `twitter:image` tags.
+  `assets/css/styles.css` under `:root` (neutral slate palette + the brand
+  indigo `#1F2A56` accent and muted gold `#C6A55A` highlight).
+- **Logo / icons** — the brand assets (`logo-mark.png`, `logo-lockup.png`,
+  `og.png`, `favicon.png`, `apple-touch-icon.png`) are generated from the source
+  artwork. To regenerate them, re-run the image processing step against the
+  original logo files.
+- **Social share image** — `assets/img/og.png` (1200×630). Referenced by the
+  `og:image` / `twitter:image` tags on every page.
 
 ---
 
